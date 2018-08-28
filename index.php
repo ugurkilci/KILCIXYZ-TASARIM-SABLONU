@@ -8,7 +8,7 @@ $copyright = "Şablon";
 $link = "https://".$_SERVER['HTTP_HOST']."".$_SERVER['REQUEST_URI'];
 
 if ($logo == "") {
-    $logox = '<a href="'.$link.'" title="'.$baslik.' '.$slogan.'"><h1>'.$baslik.'</h1></a>';
+    $logox = '<h1><a href="'.$link.'" title="'.$baslik.' '.$slogan.'">'.$baslik.'</a></h1>';
 } else {
     $logox = '<a href="'.$link.'" title="'.$baslik.' '.$slogan.'"><img src="'.$logo.'" alt="'.$baslik.'"></a>';
 }
@@ -31,7 +31,7 @@ if ($logo == "") {
 			background:#efefef;
 			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 		}
-        h1, h1:hover, h1:focus{
+        h1 a, h1 a:hover, h1 a:focus{
             color:#000;
         }
     </style>
