@@ -1,11 +1,11 @@
 <?php
 
 $baslik = "Başlık";
-$solgan = "Slogan";
+$slogan = "Slogan";
 $logo = "";
 $copyright = "Şablon";
 
-$link = $_SERVER['HTTP_HOST']."".$_SERVER['REQUEST_URI'];
+$link = "https://".$_SERVER['HTTP_HOST']."".$_SERVER['REQUEST_URI'];
 
 if ($logo == "") {
     $logox = '<a href="'.$link.'" title="'.$baslik.' '.$slogan.'"><h1>'.$baslik.'</h1></a>';
